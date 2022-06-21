@@ -2,16 +2,19 @@
 #include <array>
 //4
 
-void CreatingNewMatrix(std::array <std::array<int, 3>, 3>& M)
+int CreatingNewMatrix(std::array <std::array<int, 3>, 3>& M)
 {
     int sum = 0;
 
     for (int i = 0; i < 3; i++)
-        for (int j = i; j < 3; j += 2)
-            if (M[i][j] > 0) 
+    {
+        for (int j = i; j < 3; j++)
+            if (M[i][j] >= 0 && j % 2 == 0)
                 sum += M[i][j];
-}
+    }
 
+    return sum;
+}
 void outputMatrix(std::array <std::array<int, 3>, 3> M)
 {
     for (int i = 0; i < 3; i++)
@@ -37,10 +40,8 @@ int main()
 
     outputMatrix(M);
 
-    std::cout << "\nmatrix after: \n" << std::endl;
+    std::cout << "\nsum: " << CreatingNewMatrix(M);;
 
-    CreatingNewMatrix(M);
-    outputMatrix(M);
 
     getchar();
 
