@@ -9,14 +9,22 @@ using namespace std;
 int main()
 {
     int a, b, c;
+    
     cout << "Enter number 1: ";
+    
     cin >> a;
+    
     cout << "Enter number 2: ";
+    
     cin >> b;
+    
     cout << "Enter number 3: ";
+    
     cin >> c;
+    
     cout << "1)" << (a + b + c) / 3 
          << "\n2)" <<  2 * (a + c) - 3 * b
          << endl;
+    
     return 0;
 }
