@@ -3,9 +3,9 @@
 
 struct robot
 {
-	unsigned int speed,
-		     namber, 
-		     durationMovements;
+	unsigned int speed;
+	unsigned int namber;
+	unsigned int durationMovements;
 };
 
 float Fun(robot R)
