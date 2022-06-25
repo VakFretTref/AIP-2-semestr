@@ -26,28 +26,17 @@ int main()
 
     switch (nap)
 	{
-        case 1:
-            cout << x / 60 << endl;
+        case 1: cout << x / 60 << endl;    
             break;
-            
-        case 2:
-            cout << x * 60 << endl;
+        case 2: cout << x * 60 << endl;
             break;
-            
-        case 3:
-            cout << x * (pi / 180) << endl;
+        case 3: cout << x * (pi / 180) << endl;
             break;
-            
-        case 4:
-            cout << x * (180 / pi) * 60 << endl;
+        case 4: cout << x * (180 / pi) * 60 << endl;
             break;
-            
-        case 5:
-            cout << x * (180 / pi) << endl;
+        case 5: cout << x * (180 / pi) << endl;
             break;
-            
-        case 6:
-            cout << x * (pi / 180) / 60 << endl;
+        case 6: cout << x * (pi / 180) / 60 << endl;
             break;
 	}
     
