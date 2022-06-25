@@ -6,7 +6,7 @@ i. Правильный восьмиугольник
 */
 int main()
 {
-    int a, S;
+    int a;
     
     std::cout << "Enter side length: ";
     
