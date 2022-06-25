@@ -24,12 +24,32 @@ int main()
 
     cout << "Результат Перевода: ";
 
-    if (nap == 1) cout << x / 60 << endl;
-    else if (nap == 2) cout << x * 60 << endl;
-    else if (nap == 3) cout << x * (pi / 180) << endl;
-    else if (nap == 4) cout << x * (180 / pi) * 60 << endl;
-    else if (nap == 5) cout << x * (180 / pi) << endl;
-    else if (nap == 6) cout << x * (pi / 180) / 60 << endl;
+    switch (nap)
+	{
+        case 1:
+            cout << x / 60 << endl;
+            break;
+            
+        case 2:
+            cout << x * 60 << endl;
+            break;
+            
+        case 3:
+            cout << x * (pi / 180) << endl;
+            break;
+            
+        case 4:
+            cout << x * (180 / pi) * 60 << endl;
+            break;
+            
+        case 5:
+            cout << x * (180 / pi) << endl;
+            break;
+            
+        case 6:
+            cout << x * (pi / 180) / 60 << endl;
+            break;
+	}
     
     return 0;
 }
